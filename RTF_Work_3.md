@@ -32,7 +32,7 @@
 
 ``` pip install torch~=1.7.1 -f https://download.pytorch.org/whl/torch_stable.html ```
 
-![]()
+![](https://github.com/Little-hot-dog/RTF_Work_3/blob/main/1.png)
 
 Далее в консоли переходим в папку с проектом
 Создаем объекты плоскости, куба и сферы, выставляем настройки у компонентов, добавляем материалы
