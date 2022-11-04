@@ -23,10 +23,14 @@
 ### Реализовать систему машинного обучения в связке Python - Google-Sheets – Unity.
 Создаем проект в Unity.
 Открываем Anaconda Promt и пишем команды для создания и активации нового ML агента
-``` conda create -n MLAgent python=3.6 ```\n
+``` conda create -n MLAgent python=3.6 ```
+
 ``` conda activate MLAgent ```
+
 ``` pip install mlagents ```
+
 ``` pip install torch~=1.7.1 -f https://download.pytorch.org/whl/torch_stable.html ```
+
 ![]()
 
 Далее в консоли переходим в папку с проектом
