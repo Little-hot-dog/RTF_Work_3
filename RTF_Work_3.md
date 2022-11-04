@@ -109,15 +109,72 @@ public class RollerAgent : Agent
 
 
 ## Задание 2
-### Реализовать запись в Google-таблицу набора данных, полученных с помощью линейной регрессии из лабораторной работы № 1
+### Подробно описать каждую строку файла конфигурации нейронной сети.
 
 ```py
-
+behaviors:
+  RollerBall:
+    trainer_type: ppo
+    hyperparameters:
+      batch_size: 10
+      buffer_size: 100
+      learning_rate: 3.0e-4
+      beta: 5.0e-4
+      epsilon: 0.2
+      lambd: 0.99
+      num_epoch: 3
+      learning_rate_schedule: linear
+    network_settings:
+      normalize: false
+      hidden_units: 128
+      num_layers: 2
+    reward_signals:
+      extrinsic:
+        gamma: 0.99
+        strength: 1.0
+    max_steps: 500000
+    time_horizon: 64
+    summary_freq: 10000
 ```
-![]()
+## trainer_type: 
+тип обучения
+
+## batch_size: 
+Количество опытов в каждой итерации градиентного спуска. Это всегда должно быть в несколько раз меньше, чем ```buffer_size```.Если вы используете непрерывное пространство действий, это значение должно быть большим (порядка 1000). Если вы используете дискретное пространство действий, это значение должно быть меньше (порядка 10 секунд).
+
+## buffer_size: 
+
+## learning_rate: 
+
+## beta:
+
+## epsilon: 
+
+## lambd: 
+
+## num_epoch: 
+
+## learning_rate_schedule: 
+
+## normalize: 
+
+## hidden_units: 
+
+## num_layers: 
+
+## gamma: 
+
+## strength: 
+
+## max_steps: 
+
+## time_horizon: 
+
+## summary_freq: 
+
 
 ## Задание 3
-### Самостоятельно разработать сценарий воспроизведения звукового сопровождения в Unity в зависимости от изменения считанных данных в задании 2
+### 
 
 
 
